@@ -1,6 +1,6 @@
 {
   "name": "@my/log",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "lambda triggered by s3",
   "main": "dist/src/index.js",
   "scripts": {
