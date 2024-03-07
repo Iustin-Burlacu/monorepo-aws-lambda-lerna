@@ -6,7 +6,6 @@ export class Log {
     private logId;
 
     public constructor(tags: string[], isDebug: string | boolean | undefined, logId: string) {
-
         this.log = new LambdaLog({
             tags: tags,
             debug: isDebug === 'true' || isDebug === true
