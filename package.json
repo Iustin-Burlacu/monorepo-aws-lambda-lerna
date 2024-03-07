@@ -1,0 +1,28 @@
+{
+  "name": "root",
+  "private": true,
+  "description": "Lambda monorepo",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "@types/node": "^20.4.9"
+  },
+  "scripts": {
+    "setup": "npx lerna clean --yes && npx lerna bootstrap",
+    "compile": "npx lerna run compile",
+    "compile:log": "cd Lib/Log && npm run compile",
+    "test": "npx lerna run test",
+    "push": "npx lerna version --conventional-commits --yes",
+    "clean": "npx lerna run clean",
+    "clean:node": "npx lerna run clean:node",
+    "clean:node:main": "npx rimraf node_modules",
+    "install:log": "npm --prefix=Lib/Log install",
+    "install:api-gw": "npm --prefix=Lambdas/api-gw-lambda install",
+    "install:dynamodb": "npm --prefix=Lambdas/dynamodb-lambda install",
+    "install:s3": "npm --prefix=Lambdas/s3-lambda install",
+    "install:sqs": "npm --prefix=Lambdas/s3-lambda install",
+    "install:all": "npm run install:log && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sqs-lambda",
+  "version": "0.0.1",
+  "description": "lambda triggered by sqs",
+  "main": ".dist/src/index.js",
+  "scripts": {
+    "test": "npm run test",
+    "compile": "npx rimraf .dist && npx tsc -b",
+    "deploy": "deploy.sh",
+    "clean": "npx rimraf .dist",
+    "clean:node": "npx rimraf node_modules"
+  },
+  "keywords": [
+    "aws",
+    "sqs",
+    "lambda"
+  ],
+  "author": "Iustin Burlacu",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "ts-node": "^10.8.0",
+    "ksuid": "^3.0.0",
+    "@aws-sdk/client-dynamodb": "^3.284.0",
+    "@aws-sdk/util-dynamodb": "^3.288.0",
+    "@my/log": "*"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
+    "typescript": "^4.9.4",
+    "@types/node": "^20.4.9"
+  }
+}

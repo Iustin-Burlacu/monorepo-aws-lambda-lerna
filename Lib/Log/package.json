@@ -1,0 +1,22 @@
+{
+  "name": "@my/log",
+  "version": "0.0.1",
+  "description": "lambda triggered by s3",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx rimraf dist && npx tsc -b",
+    "clean": "npx rimraf .dist",
+    "clean:node": "npx rimraf node_modules"
+  },
+  "keywords": [
+    "lambda-log"
+  ],
+  "author": "Iustin Burlacu",
+  "dependencies": {
+    "lambda-log": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/lambda-log": "^3.0.0"
+  }
+}
