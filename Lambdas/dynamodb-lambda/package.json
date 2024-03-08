@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-lambda",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lambda triggered by dynamodb and send message to sqs",
   "main": ".dist/src/index.js",
   "scripts": {
