@@ -1,7 +1,6 @@
 import { LambdaLog } from 'lambda-log';
 
 export class Log {
-
     private log;
     private logId;
 
