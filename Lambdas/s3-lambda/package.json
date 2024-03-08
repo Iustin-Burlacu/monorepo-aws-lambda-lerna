@@ -19,7 +19,7 @@
   "dependencies": {
     "@aws-sdk/client-s3": "^3.238.0",
     "@aws-sdk/s3-request-presigner": "^3.238.0",
-    "@my/log": "^0.0.2",
+    "@my/log": "file:../../Lib/Log",
     "aws-lambda": "^1.0.7",
     "ksuid": "^3.0.0",
     "ts-node": "^10.8.0"
