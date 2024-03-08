@@ -4,6 +4,7 @@ import KSUID from "ksuid";
 import { listResources } from "./functions/listResources";
 
 export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+
 	let logId: string = KSUID.randomSync().string;
 	const log: Log = new Log(["LogApiGW", logId], process.env.DEBUG, logId);
 	log.info("Api gateway");
