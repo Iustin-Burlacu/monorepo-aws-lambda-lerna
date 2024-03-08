@@ -1,11 +1,12 @@
 {
   "name": "@my/log",
   "version": "0.0.2",
-  "description": "lambda triggered by s3",
-  "main": "dist/src/index.js",
+  "description": "logger",
+  "main": ".dist/src/index.js",
+  "typings": ".dist/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx rimraf dist && npx tsc -b",
+    "compile": "npx rimraf .dist && npx tsc -b",
     "clean": "npx rimraf .dist",
     "clean:node": "npx rimraf node_modules"
   },
