@@ -14,7 +14,6 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
         }
     
         const routeKey: string = event.httpMethod + " " + event.resource
-
         switch (routeKey) {
             case 'GET /resources':
                 return await listResources(event.queryStringParameters, event.pathParameters)
@@ -40,6 +39,5 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
             statusCode: 500,
             body: JSON.stringify(errorMessage),
         };
-    }    
-
+    }
 }

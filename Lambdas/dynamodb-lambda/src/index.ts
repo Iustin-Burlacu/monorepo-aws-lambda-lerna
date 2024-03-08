@@ -1,7 +1,7 @@
 import {DynamoDBStreamEvent, DynamoDBStreamHandler} from 'aws-lambda';
 import KSUID from "ksuid";
 import { Log } from "@my/log";
-import {sendMessage} from "./functions/sendMessage";
+import { sendMessage } from "./functions/sendMessage";
 
 export const lambdaHandler: DynamoDBStreamHandler = async (event: DynamoDBStreamEvent): Promise<void> => {
     let logId: string = KSUID.randomSync().string;
