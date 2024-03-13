@@ -13,6 +13,7 @@
     "setup": "npx lerna clean --yes && npx lerna bootstrap",
     "compile": "npx lerna run compile",
     "compile:log": "cd Lib/Log && npm run compile",
+    "compile:step-function": "cd Lambdas/StepFunctionWrapper && npm run compile",
     "compile:apigw": "cd Lambdas/api-gw-lambda && npm run compile",
     "compile:dynamodb": "cd Lambdas/dynamodb-lambda && npm run compile",
     "compile:s3": "cd Lambdas/s3-lambda && npm run compile",
@@ -23,10 +24,11 @@
     "clean:node": "npx lerna run clean:node",
     "clean:node:main": "npx rimraf node_modules",
     "install:log": "npm --prefix=Lib/Log install",
+    "install:step-function": "npm --prefix=Lib/StepFunctionWrapper install",
     "install:api-gw": "npm --prefix=Lambdas/api-gw-lambda install",
     "install:dynamodb": "npm --prefix=Lambdas/dynamodb-lambda install",
     "install:s3": "npm --prefix=Lambdas/s3-lambda install",
     "install:sqs": "npm --prefix=Lambdas/sqs-lambda install",
-    "install:all": "npm run install:log && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs"
+    "install:all": "npm run install:log && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs && npm run install:step-function"
   }
 }

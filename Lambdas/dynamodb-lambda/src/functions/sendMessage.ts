@@ -1,7 +1,7 @@
 import { AttributeValue } from "@aws-sdk/client-dynamodb";
 import { StreamRecord } from "aws-lambda";
 import KSUID from "ksuid";
-import {SQSClientWrapper} from "../logic/SQSClientWrapper";
+import {SQSClientWrapper} from "@my/sqs-client";
 import { Log } from "@my/log";
 import {unmarshall} from "@aws-sdk/util-dynamodb";
 

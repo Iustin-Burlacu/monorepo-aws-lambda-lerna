@@ -1,0 +1,21 @@
+{
+  "name": "@my/step-function",
+  "version": "0.0.0",
+  "description": "step function",
+  "main": ".dist/src/index.js",
+  "typings": ".dist/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx rimraf .dist && npx tsc -b",
+    "clean": "npx rimraf .dist",
+    "clean:node": "npx rimraf node_modules"
+  },
+  "keywords": [
+    "step-function"
+  ],
+  "author": "Iustin Burlacu",
+  "dependencies": {
+    "@aws-sdk/client-sfn": "^3.150.0",
+    "@my/log": "^0.0.5"
+  }
+}
