@@ -9,5 +9,5 @@
   "include": [
     "src/**/*"
   ],
-  "exclude": ["./dist", "./typings", "./dist/**/*"]
+  "exclude": ["./dist", "./typings", "./dist/**/*", "node_modules/**/*"]
 }
