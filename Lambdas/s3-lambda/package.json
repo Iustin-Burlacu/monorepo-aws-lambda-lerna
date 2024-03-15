@@ -1,6 +1,6 @@
 {
   "name": "s3-lambda",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "lambda triggered by s3",
   "main": ".dist/src/index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@my/s3": "*"
+    "@my/s3": "^0.0.8"
   }
 }
