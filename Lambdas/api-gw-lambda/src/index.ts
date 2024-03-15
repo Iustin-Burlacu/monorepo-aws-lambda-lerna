@@ -8,6 +8,7 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
 	let logId: string = KSUID.randomSync().string;
 	const log: Log = new Log(["LogApiGW", logId], process.env.DEBUG, logId);
 	log.info("Api gateway");
+
     try {
         if (event.resource === undefined || event.resource === null ||
             event.httpMethod === undefined || event.httpMethod === null) {
