@@ -7,7 +7,8 @@
     "composite": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "types/**/*"
   ],
   "exclude": ["./dist", "./typings", "./dist/**/*"]
 }
