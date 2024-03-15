@@ -28,5 +28,4 @@ export class Log {
     error(msg: unknown): void {
         this.log.error(msg as string);
     }
-
 }
