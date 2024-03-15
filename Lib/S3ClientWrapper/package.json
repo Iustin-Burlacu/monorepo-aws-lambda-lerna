@@ -1,6 +1,6 @@
 {
   "name": "@my/s3",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "s3 wrapper",
   "main": ".dist/src/index.js",
   "typings": ".dist/src/index.d.ts",
