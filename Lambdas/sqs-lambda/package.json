@@ -15,18 +15,5 @@
     "sqs",
     "lambda"
   ],
-  "author": "Iustin Burlacu",
-  "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.284.0",
-    "@aws-sdk/util-dynamodb": "^3.288.0",
-    "@my/log": "file:../../Lib/Log",
-    "aws-lambda": "^1.0.7",
-    "ksuid": "^3.0.0",
-    "ts-node": "^10.8.0"
-  },
-  "devDependencies": {
-    "@types/aws-lambda": "^8.10.131",
-    "@types/node": "^20.4.9",
-    "typescript": "^4.9.4"
-  }
+  "author": "Iustin Burlacu"
 }

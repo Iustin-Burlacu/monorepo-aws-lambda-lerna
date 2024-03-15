@@ -17,15 +17,6 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@my/log": "file:../../Lib/Log",
-    "@my/s3": "file:../../Lib/S3ClientWrapper",
-    "aws-lambda": "^1.0.7",
-    "ksuid": "^3.0.0",
-    "ts-node": "^10.8.0"
-  },
-  "devDependencies": {
-    "@types/aws-lambda": "^8.10.131",
-    "@types/node": "^20.4.9",
-    "typescript": "^4.9.4"
+    "@my/s3": "*"
   }
 }

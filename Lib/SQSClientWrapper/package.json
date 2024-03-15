@@ -15,7 +15,6 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@aws-sdk/client-sqs": "^3.499.0",
-    "@my/log": "file:../Log"
+    "@aws-sdk/client-sqs": "^3.499.0"
   }
 }

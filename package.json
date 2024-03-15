@@ -3,14 +3,22 @@
   "private": true,
   "description": "Lambda monorepo",
   "dependencies": {
-    "typescript": "^4.9.4"
+    "aws-lambda": "^1.0.7",
+    "@aws-sdk/client-dynamodb": "^3.284.0",
+    "@aws-sdk/util-dynamodb": "^3.288.0",
+    "@my/log": "*",
+    "ksuid": "^3.0.0",
+    "ts-node": "^10.8.0"
   },
   "devDependencies": {
     "lerna": "^8.1.2",
-    "@types/node": "^20.4.9"
+    "@types/node": "^20.4.9",
+    "@types/aws-lambda": "^8.10.131",
+    "typescript": "^4.9.4"
   },
   "scripts": {
     "setup": "npx lerna clean --yes && npx lerna bootstrap",
+    "setup:ci": "npm ci",
     "compile": "npx lerna run compile",
     "compile:log": "cd Lib/Log && npm run compile",
     "compile:step-function": "cd Lib/StepFunctionWrapper && npm run compile",
@@ -34,5 +42,9 @@
     "install:s3": "npm --prefix=Lambdas/s3-lambda install",
     "install:sqs": "npm --prefix=Lambdas/sqs-lambda install",
     "install:all": "npm run install:log && npm run install:s3-client && npm run install:sqs-client && npm run install:step-function && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs"
-  }
+  },
+  "workspaces": [
+    "Lambdas/*",
+    "Lib/*"
+  ]
 }
