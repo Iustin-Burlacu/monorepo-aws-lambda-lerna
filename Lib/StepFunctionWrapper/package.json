@@ -15,6 +15,7 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@aws-sdk/client-sfn": "^3.150.0"
+    "@aws-sdk/client-sfn": "^3.150.0",
+    "@my/log": "^0.0.9"
   }
 }

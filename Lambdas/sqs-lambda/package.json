@@ -15,5 +15,8 @@
     "sqs",
     "lambda"
   ],
-  "author": "Iustin Burlacu"
+  "author": "Iustin Burlacu",
+  "dependencies": {
+    "@my/log": "^0.0.9"
+  }
 }
