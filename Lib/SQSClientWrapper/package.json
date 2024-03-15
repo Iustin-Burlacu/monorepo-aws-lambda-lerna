@@ -1,6 +1,6 @@
 {
   "name": "@my/sqs-client",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "description": "sqs",
   "main": ".dist/src/index.js",
   "typings": ".dist/src/index.d.ts",
@@ -16,6 +16,6 @@
   "author": "Iustin Burlacu",
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.499.0",
-    "@my/log": "^0.0.12"
+    "@my/log": "^1.0.0"
   }
 }
