@@ -1,6 +1,6 @@
 {
   "name": "sqs-lambda",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "lambda triggered by sqs",
   "main": ".dist/src/index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@my/log": "^0.0.9"
+    "@my/log": "^0.0.10"
   }
 }
