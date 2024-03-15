@@ -1,6 +1,6 @@
 {
   "name": "@my/step-function",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "step function",
   "main": ".dist/src/index.js",
   "typings": ".dist/src/index.d.ts",

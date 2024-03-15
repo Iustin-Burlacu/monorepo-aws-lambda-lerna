@@ -1,6 +1,6 @@
 {
   "name": "api-gw-lambda",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "lambda triggered by api gateway",
   "main": ".dist/src/index.js",
   "scripts": {
