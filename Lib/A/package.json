@@ -1,0 +1,17 @@
+{
+  "name": "@my/a",
+  "version": "1.0.0",
+  "description": "a test library",
+  "main": ".dist/src/index.js",
+  "typings": ".dist/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx rimraf .dist && npx tsc -b",
+    "clean": "npx rimraf .dist",
+    "clean:node": "npx rimraf node_modules"
+  },
+  "author": "Iustin Burlacu",
+  "dependencies": {
+    "@my/log": "^1.0.0"
+  }
+}
