@@ -3,8 +3,8 @@
   "private": true,
   "description": "Lambda monorepo",
   "devDependencies": {
-    "lerna": "^8.1.2",
     "@types/node": "^20.4.9",
+    "lerna": "^8.1.2",
     "typescript": "^4.9.4"
   },
   "workspaces": [
@@ -34,6 +34,14 @@
     "install:dynamodb": "npm --prefix=Lambdas/dynamodb-lambda install",
     "install:s3": "npm --prefix=Lambdas/s3-lambda install",
     "install:sqs": "npm --prefix=Lambdas/sqs-lambda install",
-    "install:all": "npm run install:log && npm run install:s3-client && npm run install:sqs-client && npm run install:step-function && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs"
+    "install:all": "npm run install:log && npm run install:s3-client && npm run install:sqs-client && npm run install:step-function && npm run install:api-gw && npm run install:dynamodb && npm run install:s3 && npm run install:sqs",
+    "prepack": "npmignore --auto",
+    "build:Lambdas/api-gw-lambda": "npx lerna run build --scope @my/* --scope api-gw-lambda"
+  },
+  "publishConfig": {
+    "ignore": [
+      "src/",
+      "test/"
+    ]
   }
 }

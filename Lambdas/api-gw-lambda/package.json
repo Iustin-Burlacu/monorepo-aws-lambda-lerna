@@ -8,7 +8,9 @@
     "compile": "npx rimraf .dist && npx tsc -b",
     "deploy": "./deploy.sh",
     "clean": "npx rimraf .dist",
-    "clean:node": "npx rimraf node_modules"
+    "clean:node": "npx rimraf node_modules",
+    "build": "npx rimraf .dist && esbuild ./src/index.ts --bundle --sourcemap --platform=node --outdir=.dist",
+    "postbuild": "npx tsc -b"
   },
   "keywords": [
     "aws",
@@ -21,10 +23,10 @@
     "@aws-sdk/util-dynamodb": "^3.288.0",
     "@my/log": "^1.0.0",
     "aws-lambda": "^1.0.7",
-    "ksuid": "^3.0.0",
-    "ts-node": "^10.8.0"
+    "ksuid": "^3.0.0"
   },
   "devDependencies": {
+    "ts-node": "^10.8.0",
     "@types/aws-lambda": "^8.10.131",
     "@types/node": "^20.4.9",
     "typescript": "^4.9.4"
