@@ -1,6 +1,6 @@
 {
   "name": "s3-lambda",
-  "version": "1.0.0",
+  "version": "1.1.1-alpha.0",
   "description": "lambda triggered by s3",
   "main": ".dist/src/index.js",
   "scripts": {
@@ -17,15 +17,15 @@
   ],
   "author": "Iustin Burlacu",
   "dependencies": {
-    "@my/log": "^1.0.0",
-    "@my/s3": "^1.0.0",
+    "@my/log": "^1.1.1-alpha.0",
+    "@my/s3": "^1.1.1-alpha.0",
     "aws-lambda": "^1.0.7",
     "ksuid": "^3.0.0"
   },
   "devDependencies": {
-    "ts-node": "^10.8.0",
     "@types/aws-lambda": "^8.10.131",
     "@types/node": "^20.4.9",
+    "ts-node": "^10.8.0",
     "typescript": "^4.9.4"
   }
 }
