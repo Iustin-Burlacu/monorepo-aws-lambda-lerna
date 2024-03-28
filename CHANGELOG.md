@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4-beta.0.1](https://github.com/Iustin-Burlacu/monorepo-aws-lambda-lerna/compare/v1.2.4-beta.0.0...v1.2.4-beta.0.1) (2024-03-28)
+
+
+### Bug Fixes
+
+* test ([a5591b9](https://github.com/Iustin-Burlacu/monorepo-aws-lambda-lerna/commit/a5591b912e28d488dede0f51e8c5cdb6e900ce06))
+
+
+
+
+
 ## [1.2.3](https://github.com/Iustin-Burlacu/monorepo-aws-lambda-lerna/compare/v1.2.3-alpha.1...v1.2.3) (2024-03-28)
 
 
