@@ -6,8 +6,9 @@ import { listResources } from "./functions/listResources";
 export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
 
 	let logId: string = KSUID.randomSync().string;
-	const log: Log = new Log(["LogApiGW", logId], process.env.DEBUG, logId);
+	const log: Log = new Log(["LogApiGw", logId], process.env.DEBUG, logId);
 	log.info("Api gateway");
+
     try {
         if (event.resource === undefined || event.resource === null ||
             event.httpMethod === undefined || event.httpMethod === null) {
