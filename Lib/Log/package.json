@@ -1,6 +1,6 @@
 {
   "name": "@my/log",
-  "version": "1.2.7-alpha.0",
+  "version": "1.2.7-alpha.1",
   "description": "logger",
   "main": ".dist/src/index.js",
   "typings": ".dist/src/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-lambda",
-  "version": "1.2.7-alpha.0",
+  "version": "1.2.7-alpha.1",
   "description": "lambda triggered by dynamodb and send message to sqs",
   "main": ".dist/src/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.284.0",
     "@aws-sdk/util-dynamodb": "^3.288.0",
-    "@my/log": "^1.2.7-alpha.0",
-    "@my/sqs-client": "^1.2.7-alpha.0",
+    "@my/log": "^1.2.7-alpha.1",
+    "@my/sqs-client": "^1.2.7-alpha.1",
     "aws-lambda": "^1.0.7",
     "ksuid": "^3.0.0"
   },
