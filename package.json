@@ -24,7 +24,7 @@
     "test": "npx lerna run test",
     "push": "npx lerna version --conventional-commits --yes",
     "push:prerelease": "npx lerna version --conventional-prerelease --yes",
-    "push:graduate": "npx lerna version --conventional-graduate --force-conventional-graduate --yes",
+    "push:graduate": "npx lerna version --conventional-commits --conventional-graduate --force-conventional-graduate --yes",
     "clean": "npx lerna run clean",
     "clean:node": "npx lerna run clean:node",
     "clean:node:main": "npx rimraf node_modules",
