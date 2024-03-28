@@ -23,7 +23,7 @@
     "compile:Lambdas/sqs-lambda": "npx lerna run compile --scope @my/* --scope sqs-lambda",
     "test": "npx lerna run test",
     "push": "npx lerna version --conventional-commits --yes",
-    "push:prerelease": "npx lerna version --conventional-prerelease --yes",
+    "push:prerelease": "npx lerna version --conventional-prerelease --conventional-commits --yes",
     "push:graduate": "npx lerna version --conventional-commits --conventional-graduate --force-conventional-graduate --yes",
     "clean": "npx lerna run clean",
     "clean:node": "npx lerna run clean:node",
