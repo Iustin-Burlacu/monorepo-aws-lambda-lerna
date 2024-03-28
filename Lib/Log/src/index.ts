@@ -9,7 +9,6 @@ export class Log {
             tags: tags,
             debug: isDebug === 'true' || isDebug === true
         })
-
         this.logId = logId
     }
 
