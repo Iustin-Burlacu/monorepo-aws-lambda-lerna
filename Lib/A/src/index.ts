@@ -1,4 +1,5 @@
 import { Log } from "@my/log";
+
 export class A {
     private log;
 
