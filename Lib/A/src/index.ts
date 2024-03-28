@@ -8,6 +8,6 @@ export class A {
     }
 
     async test() {
-        this.log.debug('test')
+        this.log.debug('a')
     }
 }
